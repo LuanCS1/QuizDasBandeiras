@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenGuatemala">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_neutral_variant90"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="411dp"
+            android:layout_height="70dp"
+            android:background="#3F51B5"
+            android:gravity="center_horizontal"
+            android:text="Que pais é este? "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="309dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            app:srcCompat="@drawable/guatemala" />
+
+    <RadioGroup
+        android:id="@+id/rbgContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp">
+
+        <RadioButton
+            android:id="@+id/rbChina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="Honduras"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/rbCoreia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="Finlandia"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/rbGuatemala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="Guatemala"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/rbCuba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="Noruega"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:enabled="false"
+        android:onClick="Confirm"
+        android:text="Responder" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

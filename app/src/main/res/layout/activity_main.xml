@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_neutral_variant90"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/inicio"
+            android:layout_width="410dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="60dp"
+            android:background="#3F51B5"
+            android:backgroundTint="#6D7BC8"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center_horizontal"
+            android:text="Inicio"
+            android:textColor="#FDFDFD"
+            android:textSize="24sp"
+             />
+
+        <ImageView
+            android:id="@+id/lulu"
+            android:layout_width="match_parent"
+            android:layout_height="223dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:srcCompat="@mipmap/lulucher"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/nomeLuan"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Luan Carlos dos Santos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/lulu"
+            app:layout_constraintTop_toBottomOf="@+id/inicio" />
+
+        <TextView
+            android:id="@+id/rgm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="120dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="25039130"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/lulu"
+            app:layout_constraintTop_toBottomOf="@+id/nomeLuan" />
+
+
+        <EditText
+            android:id="@+id/edtNome"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="407dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="50dp"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="Digite seu Nome"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#777777"
+            android:backgroundTint="#777777"
+            android:clickable="true"
+            android:enabled="false"
+            android:onClick="startQuiz"
+            android:text="Iniciar Quiz"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/sair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="4dp"
+            android:background="#777777"
+            android:backgroundTint="#777777"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="sairQuiz"
+            android:text="Fechar"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
